@@ -1,0 +1,12 @@
+.jumbo-bg {
+    background: url(http://blog.mytrendyphone.co.uk/wp-content/uploads/2015/06/girl-holding-a-smartphone.jpg) 50% 60% fixed;
+    color: #fff;
+}
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
