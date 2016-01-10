@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
 .jumbo-bg {
     background: url(http://blog.mytrendyphone.co.uk/wp-content/uploads/2015/06/girl-holding-a-smartphone.jpg) 50% 60% no-repeat fixed;
     color: #fff;
@@ -10,3 +15,14 @@
     margin-bottom: 0;
 }
 
+.glyphicon-plus-sign {
+    color: green;
+}
+
+.glyphicon-minus-sign {
+    color: red;
+}
+
+.sort-drop {
+    display: inline-block;
+}

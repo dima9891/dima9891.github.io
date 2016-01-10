@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>QR-code generator</title>
+
+    <!-- Bootstrap -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css" rel="stylesheet">
+    <link href="css/user.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">QR-winner</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Узнать больше</a></li>
+                    <li><a href="reg.html">Зарегистрироваться</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Войти</a></li>
+                    <li><a href="code-page.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Личный кабинет</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Личный кабинет</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Иван Иванович Иванов</h2>
+                <p>Всего кодов: 110</p>
+                <p>Активных кодов: 25</p>
+                <p>Кодов погашено за сегодня: 0</p>
+                <p>Погашенных кодов: 85</p>
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <h2>Сгенерировать код</h2>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Название">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="Описание кода"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Сгенерировать</button>
+                </form>
+            </div>
+            <div class="col-md-12">
+                <h2>Все коды</h2>
+            </div>
+            <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputName2">Искать по названию или описанию</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Только активные
+                            </label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Только погашенные
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-filter"></span>   Фильтровать</button>
+                                        <div class="dropdown sort-drop">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="sort" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true">
+                        <span class="glyphicon glyphicon-sort-by-attributes"></span>   Расставить
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">По дате создания от самых новых</a></li>
+                        <li><a href="#">По дате создания от самых старых</a></li>
+                        <li><a href="#">По статусу</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">По имени А - Я</a></li>
+                        <li><a href="#">По имени Я - А</a></li>
+                    </ul>
+                </div>
+                    </form>
+                    
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен
+                <span class="glyphicon glyphicon-wrench"></span> Настроить
+                <span class="glyphicon glyphicon-remove text-danger"></span> Погасить
+                </p>
+                <p>Описание какое-то</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
+                <p>Описание какое-то</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Погашен</p>
+                <p>Описание какое-то очень длинное и подробное, в нем даже цена подарка указана и указано - погасить самому до 15 февраля, если не будет погашено автоматически.</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Погашен</p>
+                <p>Описание какое-то</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Погашен</p>
+                <p>Описание какое-то</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
+                <p>Описание какое-то</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
+                <p>Описание какое-то</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Погашен</p>
+                <p>Описание какое-то</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
+                <p>Описание какое-то</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Акция бесплатный массаж</h3>
+                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
+                <p>Описание какое-то</p>
+                <p>Код создан: 21 января 2016</p>
+                <p>Код погашен: 28 января 2016</p>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
