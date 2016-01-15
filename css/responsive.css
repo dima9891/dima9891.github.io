@@ -1,0 +1,20 @@
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+    .form-code-generate {
+        margin-bottom: 2em;
+    }
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+    .form-code-generate {
+        margin-bottom: 2em;
+    }
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { 
+    .form-code-generate {
+        margin-bottom: 2em;
+    }
+ }

@@ -86,103 +86,78 @@
                                 <input type="checkbox"> Только погашенные
                             </label>
                         </div>
-                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-filter"></span>   Фильтровать</button>
-                                        <div class="dropdown sort-drop">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="sort" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="true">
-                        <span class="glyphicon glyphicon-sort-by-attributes"></span>   Расставить
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                        <li><a href="#">По дате создания от самых новых</a></li>
-                        <li><a href="#">По дате создания от самых старых</a></li>
-                        <li><a href="#">По статусу</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">По имени А - Я</a></li>
-                        <li><a href="#">По имени Я - А</a></li>
-                    </ul>
-                </div>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-filter">
+                            </span>   Фильтровать</button>
                     </form>
                     
             </div>
-            <div class="clearfix"></div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен
-                <span class="glyphicon glyphicon-wrench"></span> Настроить
-                <span class="glyphicon glyphicon-remove text-danger"></span> Погасить
-                </p>
-                <p>Описание какое-то</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
-                <p>Описание какое-то</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Погашен</p>
-                <p>Описание какое-то очень длинное и подробное, в нем даже цена подарка указана и указано - погасить самому до 15 февраля, если не будет погашено автоматически.</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Погашен</p>
-                <p>Описание какое-то</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Погашен</p>
-                <p>Описание какое-то</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
-                <p>Описание какое-то</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
-                <p>Описание какое-то</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Погашен</p>
-                <p>Описание какое-то</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-            <div class="clearfix"></div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
-                <p>Описание какое-то</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-            <div class="col-md-3">
-                <h3>Акция бесплатный массаж</h3>
-                <p><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;Активен</p>
-                <p>Описание какое-то</p>
-                <p>Код создан: 21 января 2016</p>
-                <p>Код погашен: 28 января 2016</p>
-            </div>
-        </div>
+            <table class="table table-striped" id="code-list">
+                <thead>
+                    <tr>
+                        <th>Название акции</th>
+                        <th>Описание</th>
+                        <th>Код создан</th>
+                        <th>Код погашен</th>
+                        <th>Состояние</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="nopadding">
+                            <p>
+                                Акция бесплатный массаж
+                            </p>
+                        </td>
+                        <td class="nopadding">
+                            <p>Описание какое-то
+                        </td>
+                        <td>
+                            21 января 2016
+                        </td>
+                        <td>
+                            28 января 2016
+                        </td>
+                        <td>
+                            <p class="text-success"><strong>Активен</strong></p>
+                        </td>
+                        <td>
+                             <p>
+                                <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Акция бесплатный массаж
+                            </p>
+                        </td>
+                        <td>
+                            <p>Описание какое-то
+                        </td>
+                        <td>
+                            21 января 2016
+                        </td>
+                        <td>
+                            28 января 2016
+                        </td>
+                        <td>
+                            <p class="text-danger"><strong>Неактивен</strong></p>
+                        </td>
+                        <td>
+                             <p>
+                                <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-remove text-danger" aria-hidden="true"></span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
     </div>
+    <footer class="footer"></footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
